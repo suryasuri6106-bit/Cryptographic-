@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Jan, 2026, 9:44:24 AM
+    Author     : DELL
+*/
+
+/* USER DASHBOARD WRAPPER */
+.user-dashboard-wrapper {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+/* Welcome text */
+.welcome-text {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+/* CARD CONTAINER */
+.user-dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* USER CARD */
+.user-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Card text */
+.user-card h3 {
+    color: #203a43;
+    margin-bottom: 10px;
+}
+
+.user-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Card button */
+.user-card a {
+    padding: 10px 20px;
+    background: #203a43;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .user-dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .user-dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Animated Welcome Text */
+.welcome-text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-align: center;
+
+    /* Gradient text */
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Animation */
+    animation: welcomeGlow 3s linear infinite;
+}
+
+/* Subtle glow animation */
+@keyframes welcomeGlow {
+    0% {
+        background-position: 0% center;
+        text-shadow: 0 0 5px rgba(0,198,255,0.3);
+    }
+    50% {
+        background-position: 100% center;
+        text-shadow: 0 0 12px rgba(0,114,255,0.6);
+    }
+    100% {
+        background-position: 0% center;
+        text-shadow: 0 0 5px rgba(0,198,255,0.3);
+    }
+}

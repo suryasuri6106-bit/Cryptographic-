@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Jan, 2026, 10:15:08 AM
+    Author     : DELL
+*/
+
+/* Page Container */
+.page-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #203a43;
+}
+
+/* Table Styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.styled-table thead tr {
+    background-color: #203a43;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+    background-color: #ffffff;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Hover Effect */
+.styled-table tbody tr:hover {
+    background-color: #d1e7ff;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .styled-table th, .styled-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+}

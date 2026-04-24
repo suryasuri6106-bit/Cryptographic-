@@ -1,0 +1,343 @@
+/* ------------------------------------ */
+/* GENERAL STYLES */
+/* ------------------------------------ */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px;
+}
+
+a {
+  color: #0055a5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------ */
+/* HEADER AND NAVIGATION */
+/* ------------------------------------ */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #0055a5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px 15px;
+  font-weight: bold;
+}
+
+/* ------------------------------------ */
+/* FOOTER */
+/* ------------------------------------ */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ------------------------------------ */
+/* HOMEPAGE CAROUSEL */
+/* ------------------------------------ */
+.carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+/* ------------------------------------ */
+/* CONTAINER & CARD STYLING */
+/* ------------------------------------ */
+.container {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ------------------------------------ */
+/* FORM WRAPPER - REGISTRATION PAGE */
+/* ------------------------------------ */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 80vh;
+  background-color: #f3f6fa;
+}
+
+.form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 25px;
+  color: #003366;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-field input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-field button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0055a5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-field button:hover {
+  background-color: #003f7f;
+}
+
+.text-small {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #555;
+}
+
+/* ------------------------------------ */
+/* RESPONSIVE STYLES */
+/* ------------------------------------ */
+@media (max-width: 768px) {
+  .carousel {
+    height: 250px;
+  }
+
+  .carousel img {
+    height: 250px;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+
+  .form-box h2 {
+    font-size: 22px;
+  }
+
+  nav a {
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  .form-field input,
+  .form-field button {
+    font-size: 14px;
+  }
+}
+
+.main-header {
+    background: #1e3c72;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background: #2a5298;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+.page-container {
+    padding: 40px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3c72;
+}
+
+/* Table container */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Styled table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.styled-table thead {
+    background: #1e3c72;
+    color: white;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 14px;
+    text-align: center;
+}
+
+.styled-table tr:nth-child(even) {
+    background: #f3f6fb;
+}
+
+/* Status */
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-blocked {
+    color: red;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+
+.btn-danger {
+    background: #d9534f;
+}
+
+.btn-success {
+    background: #5cb85c;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-container {
+        padding: 20px;
+    }
+}
+
+
+/* Session key status */
+.key-active {
+    color: #1e7e34;
+    font-weight: bold;
+}
+
+.key-inactive {
+    color: #b02a37;
+    font-weight: bold;
+}
+
+/* Session status */
+.status-inactive {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+/* Disabled button */
+.btn-secondary {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+/* Log Status */
+.status-success {
+    color: #198754;
+    font-weight: bold;
+}
+
+.status-failed {
+    color: #dc3545;
+    font-weight: bold;
+}
